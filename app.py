@@ -651,9 +651,9 @@ LANGUAGES = {
 
 # --- Navbar & Header ---
 # Remove default sidebar and create a top header area
-api_key = st.secrets.get("GOOGLE_API_KEY")
+api_key = st.secrets.get("GEMINI_API_KEY")
 if not api_key:
-    st.error("Configuration Error: GOOGLE_API_KEY not found in secrets.toml")
+    st.error("Configuration Error: GEMINI_API_KEY not found in secrets.toml")
     st.stop()
 
 # Top Header Layout
